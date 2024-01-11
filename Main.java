@@ -85,7 +85,7 @@ public class Main implements ActionListener {
       outputLoss();
 			return;
 		}
-    if ("OK".equals(action) && userWord.length() > 4 && userWord.length() < 6) {
+    if ("OK".equals(action) && userWord.length() > 4 && userWord.length() < 6 && !userWord.contains(" ")) {
 			if (isWordleWordEqualsTo(userWord)) {
 				cleanPanelList();
 				JOptionPane.showMessageDialog(null, "You Win!!!", "Congrats!" + "", 1);
@@ -139,7 +139,7 @@ public class Main implements ActionListener {
           in.close();
           return line;
         } catch (Exception FileNotFoundException){ 
-          return "sussy";
+          return "no file found";
          } 
      
       }
