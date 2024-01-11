@@ -79,7 +79,7 @@ public class Main implements ActionListener {
 		String action = e.getActionCommand();
 
 		String userWord = inputPanel.getTextField().getText().trim();
-		if (colCount > 5) {
+		if (colCount > 4) {
 			JOptionPane.showMessageDialog(null, "You lose!!! The Wordle was: " + wordleWord, "GET GOOD", 0);
 			getJframe().dispose();
       outputLoss();
